@@ -78,6 +78,13 @@ export default function Login() {
 		<>
 			<div className=" flex items-center justify-center mt-12">
 				<div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+					<div className="flex items-center justify-center">
+						<img
+							src="/img/GovernmentLogo.png"
+							alt="Donation Information"
+							className="rounded-3xl h-28 w-auto mb-6"
+						/>
+					</div>
 					<h1 className="text-3xl font-bold text-red-700 mb-6 text-center">
 						Admin Login
 					</h1>

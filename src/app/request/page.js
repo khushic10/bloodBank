@@ -108,23 +108,11 @@ export default function AddRequest() {
 			<div className="bg-gray-50 h-screen overflow-auto flex flex-col">
 				<Navbar />
 				<div className="mx-24 flex flex-col justify-center items-center ">
-					<div className="m-4 flex justify-between">
-						<img
-							src="/img/saveLife.jpg"
-							alt="Blood Drop"
-							className="rounded-3xl w-auto h-32 m-2"
-						/>
-						<img
-							src="/img/saveLife1.jpg"
-							alt="Blood Drop"
-							className="rounded-3xl w-auto h-32 m-2"
-						/>
-					</div>
-					<div className="flex flex-col justify-center items-center w-1/2 mb-4">
+					<div className="flex flex-col justify-center items-center w-1/2 mb-4 m-4">
 						<div className="container h-96 mx-auto text-center">
 							<div className="flex flex-col justify-center items-center p-8 mx-12 bg-gray-50 rounded-lg shadow-lg border">
-								<h1 className="text-2xl font-bold mb-4 text-green-700">
-									Blood Request
+								<h1 className="text-2xl font-bold mb-4 text-red-800">
+									Request Blood
 								</h1>
 								<form onSubmit={handleSubmit} className="space-y-4">
 									{error && <div className="text-red-700 mb-4">{error}</div>}
@@ -216,7 +204,7 @@ export default function AddRequest() {
 									</div>
 									<button
 										type="submit"
-										className="bg-green-700 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-500"
+										className="bg-blue-800 text-white px-4 py-2 rounded-lg shadow-md hover:bg-red-900 focus:outline-none focus:ring-2 focus:ring-red-500"
 									>
 										Submit
 									</button>

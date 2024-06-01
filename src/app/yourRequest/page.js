@@ -19,6 +19,7 @@ export default function Home() {
 			}
 		}
 	}, []);
+
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
@@ -38,15 +39,22 @@ export default function Home() {
 			fetchData();
 		}
 	}, [token]);
+
 	return (
 		<div className="bg-gray-50 h-screen overflow-auto flex flex-col">
 			<Navbar />
+			<div className="marquee-container bg-blue-800 text-white w-full flex items-center p-4 my-4">
+				<p className="marquee-text">
+					If your request status is accepted, please contact the nearest health
+					center or government hospital to receive your blood.
+				</p>
+			</div>
 			<div className="flex-1 flex justify-center items-center">
-				<div className="m-8">
+				<div className="mx-8 my-2">
 					<img
 						src="/img/bloodType.jpg"
 						alt="Blood Drop"
-						className="rounded-3xl"
+						className="rounded-3xl h-96 w-auto"
 					/>
 				</div>
 				<div className="flex flex-col justify-center items-center w-4/5">
@@ -94,6 +102,26 @@ export default function Home() {
 				</div>
 			</div>
 			<Footer />
+			<style jsx>{`
+				.marquee-container {
+					overflow: hidden;
+					white-space: nowrap;
+					position: relative;
+				}
+				.marquee-text {
+					display: inline-block;
+					animation: marquee 30s linear infinite;
+					animation-delay: 1s; /* Delay start by 1 second */
+				}
+				@keyframes marquee {
+					0% {
+						transform: translateX(100%);
+					}
+					100% {
+						transform: translateX(-100%);
+					}
+				}
+			`}</style>
 		</div>
 	);
 }

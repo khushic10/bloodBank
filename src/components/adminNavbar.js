@@ -38,7 +38,7 @@ export default function AdminNavbar() {
 						<img
 							src="/img/profile.png"
 							alt="User Icon"
-							className="w-10 h-10 rounded-full"
+							className="w-8 h-8 rounded-full"
 						/>
 					</button>
 				)}

@@ -82,7 +82,14 @@ export default function Login() {
 		<>
 			<ToastContainer position="top-center" />
 			<div className="min-h-screen flex items-center justify-center bg-gray-100">
-				<div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+				<div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md m-4">
+					<div className="flex items-center justify-center">
+						<img
+							src="/img/GovernmentLogo.png"
+							alt="Donation Information"
+							className="rounded-3xl h-28 w-auto mb-6"
+						/>
+					</div>
 					<h1 className="text-3xl font-bold text-red-700 mb-6 text-center">
 						User Register
 					</h1>
@@ -201,7 +208,7 @@ export default function Login() {
 							)}
 						</div>
 
-						<div className="flex justify-center mb-6">
+						<div className="flex justify-center mb-2">
 							<button
 								type="submit"
 								className="bg-red-700 hover:bg-red-500 text-white font-semibold py-2 px-8 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -212,7 +219,7 @@ export default function Login() {
 						<div className="text-center">
 							Already Have an Account?
 							<Link href="/login">
-								<span className="text-red-700 font-semibold cursor-pointer">
+								<span className="text-red-700 font-semibold cursor-pointer ml-1">
 									Login
 								</span>
 							</Link>

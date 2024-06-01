@@ -56,8 +56,8 @@ export default function Home() {
 		<div className="bg-gray-50 h-screen overflow-auto flex flex-col">
 			<Navbar />
 			<div className="mx-12">
-				<div className="m-12 row-span-1 flex flex-col justify-center items-center">
-					<div className="flex flex-col items-center border shadow-lg rounded-xl p-8">
+				<div className="m-8 row-span-1 flex flex-col justify-center items-center">
+					<div className="flex flex-col items-center border shadow-lg rounded-xl py-4 px-8">
 						<h1 className="text-2xl font-bold mb-4 text-red-800">
 							Check Blood Availability
 						</h1>
@@ -91,17 +91,17 @@ export default function Home() {
 								</select>
 								<button
 									type="submit"
-									className="bg-green-700 mx-2 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 h-10"
+									className="bg-blue-800 mx-2 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 h-10"
 								>
 									Check
 								</button>
 							</div>
 							{search ? (
-								<div className="text-green-600 font-semibold mt-4">
+								<div className="text-green-600 text-lg font-semibold mt-4">
 									{search} blood pouch is available
 								</div>
 							) : (
-								<div className="text-red-600 font-semibold mt-4">
+								<div className="text-red-600 text-lg font-semibold mt-4">
 									{searcherror}
 								</div>
 							)}
@@ -110,15 +110,25 @@ export default function Home() {
 				</div>
 
 				<div className="grid grid-cols-2">
-					<div className="">
+					<div className="m-2 w-full text-justify">
 						<img
 							src="/img/bloodDonation.png"
 							alt="Blood Donation"
 							className="rounded-3xl m-4"
 						/>
+						<div className="my-2 mx-16 text-lg font-serif inline-block mt-4">
+							<span className="font-bold text-red-800 font-sans">
+								Hamro Blood Connect
+							</span>{" "}
+							is a pioneering initiative taken by the Government of Nepal under
+							the Department of Health Services, dedicated to ensure timely and
+							accessible blood donation and availability across the nation. This
+							platform serves as a vital link between blood donors and
+							recipients, facilitating a seamless process for those in need.
+						</div>
 					</div>
 					<div className="mt-12 mb-4 mr-12 flex flex-col justify-center items-center">
-						<h2 className=" text-green-700 text-2xl font-semibold m-2">
+						<h2 className=" text-blue-800 text-2xl font-semibold m-2">
 							Learn About Donation
 						</h2>
 						<img
