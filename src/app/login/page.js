@@ -140,7 +140,7 @@ export default function Login() {
 							</button>
 						</div>
 						<div className="text-center">
-							Don't have an account yet?{" "}
+							Dont have an account yet?{" "}
 							<Link href="/register">
 								<span className="text-red-700 font-semibold cursor-pointer">
 									Sign Up

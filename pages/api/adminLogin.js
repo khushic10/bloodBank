@@ -13,7 +13,6 @@ export default async function handler(req, res) {
 			// Find the user by email
 			const admin = await Admin.findOne({ email });
 
-			// If user not found or password doesn't match, return error
 			if (!admin || !(await bcryptjs.compare(password, admin.password))) {
 				return res.status(401).json({ error: "Invalid email or password" });
 			}

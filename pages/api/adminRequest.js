@@ -66,7 +66,6 @@ export default async function handler(req, res) {
 						});
 					}
 
-					// Update the status of the first 'quantity' blood entries to "not available"
 					for (let i = 0; i < quantity; i++) {
 						await Blood.findOneAndUpdate(
 							{ bloodType, status: "available" },
